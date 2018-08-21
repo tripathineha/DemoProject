@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Author" representedClassName="Author" syncable="YES" codeGenerationType="class">
+        <attribute name="amail" attributeType="String" syncable="YES"/>
+        <attribute name="aname" attributeType="String" syncable="YES"/>
+        <relationship name="committed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="commits" inverseEntity="Item" syncable="YES"/>
+        <fetchIndex name="byNameIndex">
+            <fetchIndexElement property="aname" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="aname"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="done" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="toDoAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="commits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="committed" inverseEntity="Author" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Author" positionX="-45" positionY="27" width="128" height="90"/>
+        <element name="Item" positionX="-54" positionY="-9" width="128" height="120"/>
+    </elements>
+</model>

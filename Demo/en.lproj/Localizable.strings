@@ -1,0 +1,29 @@
+/* 
+  Localisable.strings
+  Demo
+
+  Created by Globallogic on 22/01/18.
+  Copyright © 2018 Globallogic. All rights reserved.
+*/
+/* Label for toDoItem cell */
+"to_do_item" = "To do Item";
+
+/* Alert */
+"alert" = "Alert";
+/* Button in the alert */
+"ok" = "OK";
+"cancel" = "Cancel";
+/* Warning to the user */
+"item_not_saved" = "Your to-do could not be saved.";
+"item_name_not_given" = "Your to-do needs a name.";
+
+/* title for notification */
+"alarm" = "Alarm";
+/* title for notification action */
+"repeat" = "Repeat";
+"change" = "Change Message";
+
+
+/* Bar button */
+"cancelButton" = "Cancel";
+"saveButton" = "Save";

@@ -1,0 +1,29 @@
+/* 
+  Localisable.strings
+  Demo
+
+  Created by Globallogic on 22/01/18.
+  Copyright © 2018 Globallogic. All rights reserved.
+*/
+/* Label for toDoItem cell */
+"to_do_item" = "To do ItemFrench";
+
+/* Alert */
+"alert" = "AlertFrench";
+/* Button in the alert */
+"ok" = "OKFrench";
+"cancel" = "CancelFrench";
+/* Warning to the user */
+"item_not_saved" = "Your to-do could not be saved.French";
+"item_name_not_given" = "Your to-do needs a name.French";
+
+/* title for notification */
+"alarm" = "AlarmFrench";
+/* title for notification action */
+"repeat" = "RepeatFrench";
+"change" = "Change MessageFrench";
+
+
+/* Bar button */
+"cancelButton" = "CancelFrench";
+"saveButton" = "SaveFrench";

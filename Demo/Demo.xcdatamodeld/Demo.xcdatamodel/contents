@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Author" representedClassName=".Author" syncable="YES" codeGenerationType="category">
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="commits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="committed" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName=".Item" syncable="YES" codeGenerationType="category">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="done" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="toDoAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="committed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="commits" inverseEntity="Author" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="-36" positionY="36" width="128" height="90"/>
+        <element name="Item" positionX="-54" positionY="-9" width="128" height="120"/>
+    </elements>
+</model>
